@@ -34,7 +34,9 @@ plt.scatter(x0, y0, s=50, color='b')
 plt.plot([x0, x0], [y0, 0], 'k--', linewidth=2.5)
 
 # annotation 1
-plt.annotate(r'$2x+1=%s$' % y0, xy=(x0, y0), xycoords='data', xytext=(+30, -30), textcoords='offset points', fontsize=16,
+plt.annotate(r'$2x+1=%s$' % y0, xy=(x0, y0),
+             xycoords='data', xytext=(+30, -30),
+             textcoords='offset points', fontsize=16,
              arrowprops=dict(arrowstyle='->', connectionstyle='arc3, rad=.2'))
 # annotation 2
 plt.text(-1, 2.5, r'$this\ is\ the\ some\ text.\ \mu\ \sigma_i\ \alpha_t$', fontdict={'size': 16, 'color': 'r'})
